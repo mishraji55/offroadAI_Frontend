@@ -56,7 +56,7 @@ async function predictImage() {
 
   document.getElementById("decision").innerHTML = "Analyzing..."
 
-  let res = await fetch("http://139.84.162.120/predict-image", {
+  let res = await fetch("http://139.84.162.120:10000/predict-image", {
     method: "POST",
     body: formData
   })
@@ -155,7 +155,7 @@ async function predictVideo() {
   document.getElementById("videoFinalDecision").innerHTML = ""
 
   try {
-    const res = await fetch("http://139.84.162.120/predict-video", {
+    const res = await fetch("http://139.84.162.120:10000/predict-video", {
       method: "POST",
       body: formData
     })
@@ -274,7 +274,7 @@ async function analysisLoop() {
     const fd = new FormData()
     fd.append("file", blob)
 
-    const res = await fetch("http://139.84.162.120/predict-image", {
+    const res = await fetch("http://139.84.162.120:10000/predict-image", {
       method: "POST",
       body: fd
     })
