@@ -1,0 +1,21 @@
+{
+  "name": "offroad-frontend",
+  "version": "1.0.0",
+  "description": "Frontend for OFFROAD-AI terrain classification system",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 3000 --directory .",
+    "build": "echo 'Static site - no build needed'"
+  },
+  "keywords": [
+    "terrain-classification",
+    "ai",
+    "offroad-navigation",
+    "machine-learning"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "engines": {
+    "node": "18.x"
+  }
+}
